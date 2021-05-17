@@ -17,6 +17,7 @@
   margin-top: 1em;
 }
 
+
 textarea {
   background-color: transparent;
   border: 0px;
@@ -30,6 +31,13 @@ textarea:focus {
   outline: none;
 }
 
+label {
+  position: fixed;
+}
+
+textarea:valid + label {
+  opacity: 0;
+}
 
 button {
   background-color: #4056A1;
