@@ -1,6 +1,8 @@
 .new-tweet {
   display: flex;
   flex-direction: column;
+  width: inherit;
+  font-weight: 600;
 }
 
 .new-tweet form {
@@ -8,24 +10,30 @@
   flex-direction: column;
 }
 
+.new-tweet form div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
 textarea {
   background-color: transparent;
   border: 0px;
   border-bottom: 2px solid black;
+  resize: none;
+  font-weight: 600;
+  font-size: 20px;
 }
 
-form div {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+textarea:focus {
+  outline: none;
 }
+
 
 button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 18px;
   background-color: #4056A1;
   font-family: "Bungee";
   color: white;
 }
+
