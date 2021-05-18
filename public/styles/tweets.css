@@ -1,0 +1,40 @@
+article {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #545149;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: inherit;
+  padding: 0.5em;
+}
+
+article:hover {
+  box-shadow: 6px 6px rgba(107, 114, 218, 0.507);
+}
+
+article header {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.handle {
+  color: rgb(107, 114, 218);
+  font-weight: bold;
+}
+
+article footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: inherit;
+  padding: 0.5em;
+  font-size: 0.6em;
+}
+
+.tweet-icons {
+  color: #4056A1;
+}
+
+i:hover {
+  color: gold;
+}
