@@ -11,6 +11,8 @@ nav {
   align-items: flex-start;
   font-family: "Bungee";
   font-size: 40px;
+  position: fixed;
+  top: 0;
 }
 
 .navDesc {
@@ -22,6 +24,6 @@ nav {
   font-size: 24px;
 }
 
-.fas {
+.fa-angle-double-down {
   color: red;
 }
