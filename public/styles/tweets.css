@@ -34,6 +34,6 @@ article footer {
   color: #4056A1;
 }
 
-i:hover {
+.tweet-icons i:hover {
   color: gold;
 }
