@@ -2,8 +2,7 @@ article {
   display: flex;
   flex-direction: column;
   border: 3px solid #545149;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 1em;
   width: inherit;
   padding: 0.5em;
 }
