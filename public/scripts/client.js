@@ -46,6 +46,18 @@ const createTweetElement = function(tweet) {
 return $tweet;
 }
 
+const createTooLongErrorElement = function() {
+  let $error = 
+  `<span><h3 class="error">&#9888; Please shrink to my arbitrary limits lmao &#9888;</h3></span>`
+  return $error
+}
+
+const createNoCharErrorElement = function() {
+  let $error = 
+  `<span><h3 class="error">&#9888; Ya gotta type somethin'! &#9888;</h3></span>`
+  return $error
+}
+
 const loadTweets = function() {
   $.get("/tweets", function(data) {
     renderTweets(data);
@@ -58,15 +70,19 @@ $(document).ready(function() {
   loadTweets();
     $("#new-tweet-form").submit(function(event) {
       event.preventDefault();
-      if ($("#tweet-text").val().length <= 0) {
-        alert("Ya gotta type somethin'!")
-      } else if ($("#tweet-text").val().length >= 140) {
-        alert("Too many characters. Please shrink to my arbitrary limits lmao")
+      if ($("#tweet-text").val().trim().length <= 0) {
+        $(".error").slideUp("slow")
+        $(".error-area").append(createNoCharErrorElement()).slideDown("slow");
+      } else if ($("#tweet-text").val().length > 140) {
+        $(".error").slideUp("slow")
+        $(".error-area").append(createTooLongErrorElement()).slideDown("slow");
       } else {
         $.post("/tweets", $(this).serialize()).then(function( data ) {
-            $("#tweet-text").val("")
-            $(".counter").val("140")
-            loadTweets();
+          console.log(data);
+          $(".error").slideUp("slow")
+          $("#tweet-text").val("")
+          $(".counter").val("140")
+          loadTweets();
         });
       }
     });
