@@ -4,8 +4,8 @@ nav {
   height: 120px;
   width: 100%;
   width: 100vw;
-  background-color: #4056A1;
-  color: #FFF;
+  background-color: hsla(226, 43%, 44%, 1);
+  color: hsla(37.5, 26.7%, 94.1%, 1);
   padding: 1.5em;
   justify-content: space-between;
   align-items: flex-start;
@@ -25,5 +25,5 @@ nav {
 }
 
 .fa-angle-double-down {
-  color: red;
+  color: hsla(0, 100%, 50%, 1);
 }

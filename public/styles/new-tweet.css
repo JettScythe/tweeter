@@ -21,22 +21,22 @@
 
 .error {
   width: 100%;
-  background-color: #ffffff !important;
-  color: red !important;
+  background-color: hsla(0, 0%, 100%, 1) !important;
+  color: hsla(0, 100%, 50%, 1) !important;
   padding: 10px !important;
   border-radius: 0 !important;
   position: relative; 
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 1px 1px 1px #aaaaaa;
+  box-shadow: 1px 1px 1px hsla(0, 0%, 67%, 1);
   margin-top: 10px;
 }
 
 textarea {
   background-color: transparent;
   border: 0px;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid hsla(0, 0%, 0%, 1);
   resize: none;
   font-weight: 600;
   font-size: 20px;
@@ -55,9 +55,9 @@ textarea:valid + label {
 }
 
 button {
-  background-color: #4056A1;
+  background-color: hsla(226, 43%, 44%, 1);
   font-family: "Bungee";
-  color: white;
+  color: hsla(37.5, 26.7%, 94.1%, 1);
 }
 
 .counter {

@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #a15940;
-  color: white;
+  background-color: hsla(15, 43%, 44%, 1);
+  color: hsl(37.5, 26.7%, 94.1%, 1);
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
 }
