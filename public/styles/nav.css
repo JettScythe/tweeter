@@ -1,7 +1,7 @@
 nav {
   z-index: 1;
   display: flex;
-  height: 120px;
+  height: 3.35em;
   width: 100%;
   width: 100vw;
   background-color: hsla(226, 43%, 44%, 1);
@@ -10,7 +10,7 @@ nav {
   justify-content: space-between;
   align-items: flex-start;
   font-family: "Bungee";
-  font-size: 40px;
+  font-size: 1.5em;
   position: fixed;
   top: 0;
 }
@@ -21,7 +21,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
+  font-size: 0.6em;
 }
 
 .fa-angle-double-down {

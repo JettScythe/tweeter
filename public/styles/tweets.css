@@ -1,7 +1,7 @@
 article {
   display: flex;
   flex-direction: column;
-  border: 3px solid hsla(44, 7%, 31%, 1);
+  border: 0.15em solid hsla(44, 7%, 31%, 1);
   margin-top: 1em;
   width: inherit;
   padding: 0.5em;
@@ -9,7 +9,7 @@ article {
 }
 
 article:hover {
-  box-shadow: 6px 6px hsla(227, 58%, 65%, 0.507);
+  box-shadow: 0.2em 0.2em hsla(227, 58%, 65%, 0.507);
 }
 
 article header {

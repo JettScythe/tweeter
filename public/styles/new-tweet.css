@@ -23,23 +23,23 @@
   width: 100%;
   background-color: hsla(0, 0%, 100%, 1) !important;
   color: hsla(0, 100%, 50%, 1) !important;
-  padding: 10px !important;
+  padding: 0.3em !important;
   border-radius: 0 !important;
   position: relative; 
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 1px 1px 1px hsla(0, 0%, 67%, 1);
-  margin-top: 10px;
+  box-shadow: 0.1em 0.1em 0.1em hsla(0, 0%, 67%, 1);
+  margin-top: 0.1em;
 }
 
 textarea {
   background-color: transparent;
-  border: 0px;
-  border-bottom: 2px solid hsla(0, 0%, 0%, 1);
+  border: 0em;
+  border-bottom: 0.1em solid hsla(0, 0%, 0%, 1);
   resize: none;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 0.9em;
 }
 
 textarea:focus {
