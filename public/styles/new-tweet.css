@@ -5,6 +5,10 @@
   font-weight: 600;
 }
 
+.new-tweet h2 > form {
+  display: none;
+}
+
 .new-tweet form {
   width: 100%;
   display: flex;
