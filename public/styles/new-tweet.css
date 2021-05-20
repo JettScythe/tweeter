@@ -19,6 +19,20 @@
 }
 
 
+.error {
+  width: 100%;
+  background-color: #ffffff !important;
+  color: red !important;
+  padding: 10px !important;
+  border-radius: 0 !important;
+  position: relative; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 1px #aaaaaa;
+  margin-top: 10px;
+}
+
 textarea {
   background-color: transparent;
   border: 0px;
