@@ -70,9 +70,11 @@ $(document).ready(function() {
   loadTweets();
     $("#new-tweet-form").submit(function(event) {
       event.preventDefault();
+      //if tweet is all whitespace or no chars
       if ($("#tweet-text").val().trim().length <= 0) {
         $(".error").slideUp("slow")
         $(".error-area").append(createNoCharErrorElement()).slideDown("slow");
+        // if tweet is longer than 140 chars
       } else if ($("#tweet-text").val().length > 140) {
         $(".error").slideUp("slow")
         $(".error-area").append(createTooLongErrorElement()).slideDown("slow");
