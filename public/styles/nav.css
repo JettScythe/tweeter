@@ -2,7 +2,6 @@ nav {
   z-index: 1;
   display: flex;
   height: 3.35em;
-  width: 100%;
   width: 100vw;
   background-color: hsla(226, 43%, 44%, 1);
   color: hsla(37.5, 26.7%, 94.1%, 1);
@@ -24,6 +23,14 @@ nav {
   font-size: 0.6em;
 }
 
+@keyframes bounce {
+  0% { transform: translateY(-5px)  }
+  50% { transform: translateY(10px) }
+  100% { transform: translateY(-5px) }
+}
+
 .fa-angle-double-down {
+  margin-top: 0.1em;
   color: hsla(0, 100%, 50%, 1);
+  animation: bounce 3s infinite ease-in-out;
 }

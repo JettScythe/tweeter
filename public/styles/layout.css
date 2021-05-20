@@ -46,6 +46,14 @@ main {
     min-width: 30vw;
     padding: 1em;
     margin-top: 5em;
-    position: relative;
+    transition: all 0.25s linear;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  body > nav {
+    background-color: hsla(15, 43%, 44%, 1);
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+    transition: background-color 0.5s linear;
   }
 }
