@@ -32,5 +32,8 @@ nav {
 .fa-angle-double-down {
   margin-top: 0.1em;
   color: hsla(0, 100%, 50%, 1);
+}
+
+.fa-angle-double-down:hover {
   animation: bounce 3s infinite ease-in-out;
 }
