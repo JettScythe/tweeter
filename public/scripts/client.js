@@ -65,9 +65,14 @@ const loadTweets = function() {
 }
 
 
-
 $(document).ready(function() {
   loadTweets();
+  $(".new-tweet").hide()
+  $(".navDesc").click(function(event) {
+    event.preventDefault()
+    $(".new-tweet").slideToggle("slow")
+    $("textarea").focus()
+  })
     $("#new-tweet-form").submit(function(event) {
       event.preventDefault();
       //if tweet is all whitespace or no chars
