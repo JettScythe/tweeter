@@ -76,6 +76,7 @@ $(document).ready(function() {
     $(".new-tweet").slideToggle("slow");
     $("textarea").focus();
   });
+  // check how much user has scrolled
   $(window).on("scroll", function () {
     if ($(this).scrollTop() > 150) {
       $(".to-top").show()
