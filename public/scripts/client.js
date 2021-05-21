@@ -66,7 +66,7 @@ const loadTweets = function() {
 
 
 $(document).ready(function() {
-  $(".to-top").hide()
+  $(".to-top").hide();
   loadTweets();
   $("label").toggle();
   $(".new-tweet").hide();
@@ -77,16 +77,16 @@ $(document).ready(function() {
     $("textarea").focus();
   });
   // check how much user has scrolled
-  $(window).on("scroll", function () {
+  $(window).on("scroll", function() {
     if ($(this).scrollTop() > 150) {
-      $(".to-top").show()
+      $(".to-top").show();
     } else {
-      $(".to-top").hide()
+      $(".to-top").hide();
     }
- });
- $(".to-top").click(function(event) {
-  $("html").animate({ scrollTop: 0 }, "fast");
-});
+  });
+  $(".to-top").click(function(event) {
+    $("html").animate({ scrollTop: 0 }, "fast");
+  });
  
   $("#new-tweet-form").submit(function(event) {
     event.preventDefault();
