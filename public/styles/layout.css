@@ -22,10 +22,6 @@ body {
   margin-bottom: 1em;
 }
 
-a {
-  color: hsla(37.5, 26.7%, 94.1%, 1);
-  text-decoration: none;
-}
 
 main {
   display: flex;
@@ -45,8 +41,38 @@ main {
 }
 
 /*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+* Additional CSS can be defined below or in other CSS files, as per instructions
+*/
+a {
+  color: hsla(37.5, 26.7%, 94.1%, 1);
+  text-decoration: none;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+label {
+  animation: fadeIn linear 3s;
+}
+
+.to-top {
+  transition: all .25s ease-in-out;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: .25em;
+  width: 2.5em;
+  height: 2.5em;
+  background-color: hsla(226, 43%, 44%, 0.75);
+  color: hsla(0, 0%, 100%, 1);
+  border-radius: 50%;
+  margin-bottom: 0.5em;
+}
 
  @media only screen and (min-width: 1024px) {
   .responsive {
