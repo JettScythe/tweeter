@@ -1,3 +1,24 @@
+# Tweeter Project
+
+Tweeter is a simple, single-page Twitter clone.
+
+## Final Product
+
+!["GIF of home page"](https://github.com/JettScythe/tweeter/blob/master/docs/home-page.gif?raw=true)
+
+## Dependencies
+
+- React
+- Node 5.10.x or above
+- react-timeago
+
+## Getting Started
+
+2. Install dependencies using the `npm install` command.
+3. Start the web server using the `npm start` command. The app will be served at <http://localhost:8080/>.
+4. Go to <http://localhost:3000/> in your browser.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
