@@ -1,22 +1,39 @@
 {
-  "name": "tweeter",
-  "version": "1.0.0",
-  "description": "A twitter clone by Lighthouse Labs for web bootcamp students to learn front-end dev skillz",
-  "main": "server/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server/index.js",
-    "local": "./node_modules/.bin/nodemon --watch server -e js server/index.js"
-  },
-  "author": "Lighthouse Labs",
-  "license": "ISC",
+  "name": "cra-tweeter",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "body-parser": "^1.15.2",
-    "chance": "^1.0.2",
-    "express": "^4.13.4",
-    "md5": "^2.1.0"
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "react-timeago": "^6.2.1",
+    "web-vitals": "^1.0.1"
   },
-  "devDependencies": {
-    "nodemon": "^1.9.2"
+  "scripts": {
+    "start": "BROWSER=brave react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

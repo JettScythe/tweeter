@@ -38,3 +38,8 @@ article footer {
 .tweet-icons i:hover {
   color: hsla(51, 100%, 50%, 1);
 }
+
+.profile-image {
+  max-width: 64px;
+  max-height: 64px;
+}
